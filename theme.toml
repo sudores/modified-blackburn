@@ -5,7 +5,7 @@ description = "A clear, responsive theme constructed using Pure CSS from Yahoo"
 homepage = "https://github.com/yoshiharuyamashita/blackburn"
 tags = ["blog", "personal", "purecss", "responsive"]
 features = ["blog", "personal", "purecss", "responsive"]
-min_version = 0.15
+min_version = "0.120.0"
 
 [author]
   name = "Yoshiharu Yamashita"
