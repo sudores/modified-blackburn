@@ -1,0 +1,3 @@
+<a href="{{ .Destination | safeURL }}" class="glightbox" {{ with .Title }}data-glightbox="title: {{ . }}"{{ end }}>
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" class="article-thumbnail" {{ with .Title }}title="{{ . }}"{{ end }}>
+</a>

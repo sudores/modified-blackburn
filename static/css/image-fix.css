@@ -1,4 +1,28 @@
+/* Prevent images from overflowing their containers */
 img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Article content images rendered via render hook — shown as thumbnails */
+.content .article-thumbnail {
+    max-width: 280px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+    cursor: zoom-in;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.content .article-thumbnail:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.content a.glightbox {
+    display: inline-block;
+    text-decoration: none;
 }
